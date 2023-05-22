@@ -26,7 +26,7 @@ ${deploymentId}-${body['model']}
 1. 安装 NodeJS 18。
 2. 克隆代码到命令行窗口。
 3. 运行 `npm install` 安装依赖项。
-4. 运行 `npm start` 启动应用程序。
+4. 运行 `npm run build` 然后 `npm run start` 启动应用程序。或者直接  `npm run start:dev`
 5. 运行下面脚本测试，运行前需要把`YOUR_RESOURCE_ID`，`YOUR_MODEL_DEPLOYMENT`，`YOUR_API_KEY`, `AZURE_API_VERSION`替换，`AZURE_API_VERSION`参数可选，目前默认是2023-03-15-preview。
 ```bash
 curl -X "POST" "http://localhost:3000/v1/chat/completions" \

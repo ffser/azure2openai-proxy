@@ -25,7 +25,7 @@ You must have an Azure OpenAI account to use the Azure OpenAI Proxy.
 1. Install NodeJS 18.
 2. Clone the code in the command line window.
 3. Run `npm install` to install dependencies.
-4. Run `npm start` to start the application.
+4. Run `npm run build` and `npm run start` to start the application. or `npm run start:dev`
 5. Run the script below for testing, replacing `YOUR_RESOURCE_ID`, `YOUR_MODEL_DEPLOYMENT`, and `YOUR_API_KEY` before running it, `AZURE_API_VERSION` is optional and the default value is `2023-03-15-preview`.
 ```bash
 curl -X "POST" "http://localhost:3000/v1/chat/completions" \
